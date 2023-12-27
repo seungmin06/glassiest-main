@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'GangwonEdu_OTFBoldA';
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.zonewrap canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header {
+  height: 80px;
+  padding: 20px;
+}
+
+.logo {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 290px;
+  cursor: pointer;
+}
+
+.camZone {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  width: 20vw;
+  height: 45vh;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: translate(-50%, -50%);
+}
+
+.zonewrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faceLandmarks {
+  width: 20vw;
+  height: 45vh;
+  top: 35%;
+  left: 50%;
+}
+
+#explain {
+  margin: 20px;
+  width: 700px;
+  position: absolute;
+  left: 41%;
+  top: 35%;
+  font-size: 30px;
+
+}
+
+#title {
+  margin: 20px;
+  position: absolute;
+  left: 41%;
+  top: 15%;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#faceType {
+  margin: 20px;
+  position: absolute;
+  left: 41%;
+  top: 20%;
+  font-size: 40px;
+
+  background-color: #f9dd94;
+  border-radius: 10px;
+
+  padding: 20px 10px 20px 10px;
+}
+
+#faceType>* {
+  display: inline;
+}
+
+#faceType::after {
+  content: " 얼굴형입니다.";
+}
+
+.per {
+  text-decoration: underline wavy white;
+}
+
+.rail {
+  width: 100vw;
+  border: solid 1px;
+  position: absolute;
+  height: 10vh;
+  bottom: 20%;
+}
+
+.rail img {
+  width: 10vw;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#ex {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  text-align: center;
+
+  font-size: 24px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .075), 0 1px 2px rgba(0, 0, 0, .075), 1px 2px 4px rgba(0, 0, 0, .075), 1px 3px 8px rgba(0, 0, 0, .075), 2px 4px 16px rgba(0, 0, 0, .075);
+}

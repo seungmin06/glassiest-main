@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>glassiest</title>
+  <link rel="stylesheet" href="/styles/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="/face-api.min.js"></script>
+  <script defer src="/scripts/index.js"></script>
+
+  <link rel="icon" href="/pictures/logo/favi.png">
+</head>
+
+<body>
+  <div class="home">
+    <header>
+      <div class="logo">
+        <img src="/pictures/logo/logo.png" alt="">
+      </div>
+    </header>
+
+    <div class="camZone">
+      <div class="zonewrap">
+        <video id="video" width="720" height="560" autoplay muted></video>
+      </div>
+    </div>
+
+    <button class="cheese">얼굴을 인식해주세요!</button>
+
+    
+  </div>
+</body>
+
+</html>
+
+<div id="webcam-container" style="display: none;"></div>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
